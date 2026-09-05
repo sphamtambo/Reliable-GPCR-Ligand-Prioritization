@@ -1,0 +1,43 @@
+# manuscript (private until submission/publication)
+manuscript/
+pharmaceucals_manuscript.docx
+pharmaceuticals-template.dot
+~$*.docx
+
+# data & generated outputs (too large for git; regenerate via notebooks)
+data/
+ml/
+docking/
+outputs/
+logs/
+archive/
+
+# license-restricted third-party data (DrugBank, ChEMBL raw pulls) — never commit
+*.sdf
+*.pdbqt
+
+# private project notes
+CLAUDE.local.md
+
+# cluster job scripts (internal use, not for public repo)
+*.pbs
+
+# not needed for reproducibility — internal tooling
+scripts/
+
+# Zenodo upload bundles (built locally, never git-tracked)
+*.zip
+
+# caches / OS junk
+.cache/
+.matplotlib-cache/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# internal project process docs, not for public release
+CLAUDE.md
+README_cb2_reference.md
+agents/
+rules/

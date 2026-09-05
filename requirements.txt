@@ -1,0 +1,28 @@
+rdkit>=2023.09.1
+pandas
+numpy
+scikit-learn
+xgboost
+lightgbm
+optuna
+shap
+chembl_webresource_client
+matplotlib
+scipy
+crepes==0.9.1  # split-conformal prediction wrappers used by the workflow
+venn-abers==1.5.4  # Venn-Abers probability calibration used by notebook 3
+joblib          # model persistence (03/04/05/06/07)
+tqdm            # progress bars, used throughout
+seaborn         # used in 03's run_publication_analysis plotting
+vina            # AutoDock Vina Python bindings used by notebook 5
+meeko           # ligand/receptor PDBQT preparation used by notebook 5
+gemmi           # meeko's chemtempgen module imports this directly but meeko's
+                # own package metadata doesn't declare it as a dependency —
+                # pip install meeko alone leaves it missing, ModuleNotFoundError
+                # on first meeko import; install explicitly
+dimorphite-dl   # physiological-pH protonation state assignment used by notebook 5
+
+# Non-Python requirements for notebook 5 are documented separately in that
+# notebook: OpenBabel, the GNINA binary, and the system libraries needed to
+# build or run AutoDock Vina. PyMOL is an interactive visualization dependency,
+# not a notebook-training dependency.
