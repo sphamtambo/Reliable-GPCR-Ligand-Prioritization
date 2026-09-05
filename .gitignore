@@ -22,8 +22,7 @@ CLAUDE.local.md
 # cluster job scripts (internal use, not for public repo)
 *.pbs
 
-# not needed for reproducibility — internal tooling
-scripts/
+# Reproducibility and publication-output scripts are tracked.
 
 # Zenodo upload bundles (built locally, never git-tracked)
 *.zip
